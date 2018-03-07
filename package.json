@@ -1,0 +1,23 @@
+{
+  "name": "inverted-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc && node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/express": "^4.11.1",
+    "@types/node": "^9.4.6",
+    "express": "^4.16.2",
+    "typescript": "^2.7.2"
+  },
+  "dependencies": {
+    "module-alias": "^2.0.6"
+  },
+  "_moduleAliases": {
+    "@core": "dist/modules/core",
+    "@domains": "dist/domains"
+  },
+  "_moduleDirectories": ["dist/libs"]
+}
